@@ -7,5 +7,5 @@
 ## 지능형 기동순찰 cctv
 <details>
   1. 이미지 분석 
-  2. 
+  2. 1
 </details>
