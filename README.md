@@ -4,6 +4,15 @@
 ## 팀 규칙
 1. 맡은 스케줄 밀리지 않게 하기 
 2. 시간약속 준수하기
+## 역할 분배
+<details>
+  <summary>소프트웨어</summary>
+</details>
+
+<details>
+  <summary>하드웨어</summary>
+</details>
+
 ## 초등학교 안전/방범 지킴이
 <details>
   1. 이미지 분석 </br>
