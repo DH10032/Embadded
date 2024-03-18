@@ -7,9 +7,9 @@
 ## 역할 분배
 <details>
   <summary>소프트웨어</summary>
-  1. 맵핑 </br>
-  2. TTS & STT </br>
-  3. 라인트레이싱 </br>
+  1. 맵핑 - 이동훈, 최성현 </br>
+  2. TTS & STT - 김지호 </br>
+  3. 라인트레이싱 - 이동훈, 최성현 </br>
   4. 상황인지 </br>
 </details>
 
