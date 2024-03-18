@@ -9,7 +9,7 @@
   <summary>소프트웨어</summary>
   1. 맵핑
   2. TTS
-  3. 
+  3. 라인트레이싱
 </details>
 
 <details>
