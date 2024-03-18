@@ -15,8 +15,9 @@
 
 <details>
   <summary>하드웨어</summary>
-  1. 무한궤도 조사
-  2. 디자인 구상
+  1. 무한궤도 조사 </br>
+  2. 디자인 구상 </br>
+  https://www.youtube.com/@GDSB/playlists
 </details>
 
 ## 초등학교 안전/방범 지킴이
