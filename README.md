@@ -15,7 +15,7 @@
 
 <details>
   <summary>하드웨어</summary>
-  1. 
+  1. 무한궤도
 </details>
 
 ## 초등학교 안전/방범 지킴이
