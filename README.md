@@ -15,8 +15,8 @@
 
 <details>
   <summary>하드웨어</summary>
-  1. 무한궤도 조사 </br>
-  2. 디자인 구상 </br>
+  1. 무한궤도 조사 (구할 수 있는 곳, 판매가격이나 수치등등)  </br>
+  2. 디자인 구상 (대략적인 큰 디자인, 방향성의 시각화느낌)  </br>
   https://www.youtube.com/@GDSB/playlists
 </details>
 
