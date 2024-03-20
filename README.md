@@ -49,6 +49,7 @@ https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-ser
 
   
 </details>
+
 <details>
   <summary>STT</summary>
   푸리에 변환
@@ -56,7 +57,7 @@ https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-ser
 
 <details>
   <summary>공간인식</summary>
-  1. 아두이노 실내 위치추적 모듈(오차 10cm내외) </br>
+  1. 아두이노 실내 위치추적 모듈(오차 10cm내외) - DWM1000 모듈 </br>
   2. 
 </detais>
 
