@@ -49,7 +49,8 @@ https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-ser
 
   
 </details>
-<detais>
+
+<details>
   <summary>공간인식</summary>
   1. 아두이노 실내 위치추적 모듈(오차 10cm내외) </br>
   2. 
