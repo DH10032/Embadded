@@ -59,7 +59,7 @@ https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-ser
   
   <summary>공간인식</summary>
   1. 아두이노 실내 위치추적 모듈(오차 10cm내외) - DWM1000 모듈 </br>
-  2. [SLAM 방식](https://hjdevelop.tistory.com/15) </br>
+  2. [SLAM 방식](https://hjdevelop.tistory.com/15)
   SLAM 방식에는 Visual SLAM과 
   
 </details>
