@@ -33,6 +33,7 @@ http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry
 
     you may be stopped in 2 that get key.
     Then, see a below link </br>
+    it has no effect, stop </br>
 
 https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-server-indicated-a-failure <br>
 
