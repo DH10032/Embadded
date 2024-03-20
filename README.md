@@ -56,10 +56,12 @@ https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-ser
 </details>
 
 <details>
+  
   <summary>공간인식</summary>
   1. 아두이노 실내 위치추적 모듈(오차 10cm내외) - DWM1000 모듈 </br>
   2. [SLAM 방식](https://hjdevelop.tistory.com/15) </br>
   SLAM 방식에는 Visual SLAM과 
+  
 </detais>
 
 ## 초등학교 안전/방범 지킴이
@@ -71,5 +73,3 @@ https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-ser
   1. 학교 관계자(학생, 선생님 등) 얼굴 인식 기능
       - 활용 분야 : 
 </details>
-
-[SLAM 방식](https://hjdevelop.tistory.com/15) </br>
