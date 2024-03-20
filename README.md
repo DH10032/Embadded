@@ -49,6 +49,10 @@ https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-ser
 
   
 </details>
+<details>
+  <summary>STT</summary>
+  푸리에 변환
+</details>
 
 <details>
   <summary>공간인식</summary>
