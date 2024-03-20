@@ -62,7 +62,14 @@ https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-ser
   
   2. [SLAM 방식](https://hjdevelop.tistory.com/15/)
      
-  SLAM 방식에는 Visual SLAM과 
+  SLAM 방식
+  <details>
+    <summary>프런트 엔드</summary>
+  </details>
+  
+  <details>
+    <summary>백 엔드</summary>
+  </details>
   
 </details>
 
