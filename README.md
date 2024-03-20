@@ -24,7 +24,7 @@
 
 <details>
   <summary>회로 및 라즈베리</summary>
-  라즈베리에 ros 설치시 참고하면 좋은 사이트</br>
+  라즈베리에 ros 설치시 참고하면 좋은 사이트 (아직 검증안됨) </br>
   https://m.blog.naver.com/hawmaru/221220680854</br>
   https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=rmlee&logNo=221460156608</br>
   https://kyubot.tistory.com/90</br>
