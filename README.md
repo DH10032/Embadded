@@ -21,10 +21,20 @@
   3. 대략적인 물리적 수치(중량, 크기등등) 디자인 구상에 기초하여 예측하기 (이건 목요일에 만날때 회의해보기) </br>
   https://www.youtube.com/@GDSB/playlists
 </details>
-
+  
 <details>
   <summary>회로 및 라즈베리</summary>
-  
+            
+   http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi#Setup_ROS_Repositories </br>
+
+you may be get stoped in 2 that get key than, see a below link </br>
+
+https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-server-indicated-a-failure <br>
+
+sudo gpg --keyserver keyserver.ubuntu.com --recv-keys C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654 </br>
+    
+
+
   
 </details>
 
