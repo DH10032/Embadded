@@ -25,15 +25,15 @@
 <details>
   <summary>회로 및 라즈베리</summary>
 
-    how to install ros in raspbian
-   
-    https://kyubot.tistory.com/90 </br>
+    
+    라즈베리에서 ros 설치가 되야하는 데,
+    https://kyubot.tistory.com/90 
 
 http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi#Setup_ROS_Repositories </br>
 
     you may be stopped in 2 that get key.
-    Then, see a below link </br>
-    it has no effect, stop </br>
+    Then, see a below link 
+    it has no effect, stop 
 
 https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-server-indicated-a-failure <br>
 
