@@ -26,7 +26,11 @@
   <summary>회로 및 라즈베리</summary>
 
     
-    라즈베리에서 ros 설치가 되야하는 데,
+    라즈베리에서 ros 설치가 되야하는 데, 잘 안됨, 릴리즈 페키지를 받아야하는 데 릴리즈가 되지않았다고 나옴
+    우선은 우분투 설치 + 그 곳에 ros 설치 느낌으로 진행할듯? </br>
+
+
+    여기 밑은 라즈베리에서 ros로 바로 설치할 때 필요한 사이트들(작동 안됐슴) </br>
     https://kyubot.tistory.com/90 
 
 http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi#Setup_ROS_Repositories </br>
