@@ -40,10 +40,7 @@
 
 http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi#Setup_ROS_Repositories </br>
 
-    you may be stopped in 2 that get key.
-    Then, see a below link 
-    it has no effect, stop 
-
+위에서 말한 gpg 해결법
 https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-server-indicated-a-failure <br>
 
   sudo gpg --keyserver keyserver.ubuntu.com --recv-keys C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654 </br>
