@@ -61,7 +61,6 @@ https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-ser
   2. [SLAM 방식](https://hjdevelop.tistory.com/15) </br>
   SLAM 방식에는 Visual SLAM과 
 </detais>
-[SLAM 방식](https://hjdevelop.tistory.com/15) </br>
 
 ## 초등학교 안전/방범 지킴이
 <details>
@@ -72,3 +71,5 @@ https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-ser
   1. 학교 관계자(학생, 선생님 등) 얼굴 인식 기능
       - 활용 분야 : 
 </details>
+
+[SLAM 방식](https://hjdevelop.tistory.com/15) </br>
