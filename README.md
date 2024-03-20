@@ -24,8 +24,6 @@
 
 <details>
   <summary>회로 및 라즈베리</summary>
-  라즈베리에 바로 ros 설치 -> 잘 안됨
-  라즈베리 -> 우분투 -> ros 설치 필요
   
   
 </details>
