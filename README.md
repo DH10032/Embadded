@@ -29,7 +29,7 @@
    5월 2주차 ~ 5월 5주차 </br>
   ------------------------------------------------------------------------------ </br>
   <img width="863" alt="image" src="https://github.com/DH10032/Teams/assets/155617166/7b859d7a-5345-4ada-b6a8-235f7b1e94e1"> </br>
-  처리 순서는 (frontend - > backend) - > Map representation(맵 작성) </br>
+  처리 순서는 (frontend - > backend) - > Map representation (맵 작성) </br>
   frontend를 먼저 끝낸 후 backend를 진행하면 어떨까 생각. (협의 후 결정 예정) </br>
 
  1) Data Acquistion, Visual odometry, Loop closure detection - > frontend </br>
