@@ -46,8 +46,8 @@ Ros: tcp/ip 통신 보안상 문제로 현업에서는 안 씀. 그러나 쉬워
 Ros2: Ros 보안 문제 개선, 현재는 개발 중. </br>
 2. 필요한 수학적 이론 </br>
 a) 선형대수학+베이즈 확률론(slam 기초☆) </br> 
-선형대수: 공간 이해 </br>
-베이즈 확률론: 상태 추정+ sensor fusion(센서 데이터 병합(merging)) </br>
+ 선형대수: 공간 이해 </br>
+ 베이즈 확률론: 상태 추정+ sensor fusion(센서 데이터 병합(merging)) </br>
 b) 최소자승법 문제+최적화(최신 slam) </br>
 3. 관련 라이브러리  </br>
 Opencv, Eigen, Ceres, g2o, DBoW </br>
