@@ -109,3 +109,10 @@
     </details>
   
 </details>
+
+## 문제점
+<details>
+  1. DC모터 회전수 측정
+  2. 
+  
+</details>
