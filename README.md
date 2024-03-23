@@ -116,5 +116,9 @@
   2. 
   
 </details>
-
-## 부품
+<details>
+  <summary>부품</summary>
+  1. DC모터 회전수 측정 </br>
+  2. 
+  
+</details>
