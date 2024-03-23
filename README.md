@@ -119,6 +119,7 @@
 <details>
   <summary>부품</summary>
   1. 라즈베리 카메라 </br>
-  2. 스텝모터
+  2. 스텝모터 </br>
+  3. 
   
 </details>
