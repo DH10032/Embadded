@@ -30,7 +30,7 @@
   --------------------------------------------------- </br>
   <img width="863" alt="image" src="https://github.com/DH10032/Teams/assets/155617166/7b859d7a-5345-4ada-b6a8-235f7b1e94e1"> </br>
   처리 순서는 (frondend - > backend) - > Map representation(맵 작성) </br>
- frondend를 먼저 끝낸 후 backend를 진행하면 어떨까 생각. (협의 후 결정 예정) </br>
+  frondend를 먼저 끝낸 후 backend를 진행하면 어떨까 생각. (협의 후 결정 예정) </br>
 
  1) Data Acquistion, Visual odometry, Loop closure detection - > frondend </br>
 Data Acquisiton (데이터 획득): 카메라/라이다 같은 센서로부터 정보 획득(+ 데이터로부터 노이즈 제거 필요) </br>
