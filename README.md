@@ -37,7 +37,8 @@
  Visual odometry (시각적 주행 거리 측정): 데이터 특정 추출 -> 상대적 움직임 예측 </br>
  Loop closure detection (루프 폐쇄 검출): 방문한 위치인지 판단. </br>
 2) Backend optimization(최적화) - > backend </br>
-
+------------------------------------------------------------------------------------- </br>
+<필요한 tool 및 도서> </br>
 1. 프로그래밍 언어 </br>
 Python: Opencv 통해 C++ 보다 구현이 쉬움. But 쓰레드 관리, 최적화, HW 호환성 문제가 있음. 딥러닝 slam training 시에는 유용 </br>
 C++: 빠르고 라이브러리가 많음.  </br>
