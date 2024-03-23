@@ -28,15 +28,14 @@
       *특이 사항: 4월 말~5월 초에 대회 공지가 올라올 예정이므로 공지 체크할 것. </br>
     5월 2주차 ~ 5월 5주차 </br>
   --------------------------------------------------- </br>
-  ![스크린샷 2024-03-23 155623](https://github.com/DH10032/Teams/assets/155617166/7b859d7a-5345-4ada-b6a8-235f7b1e94e1)
-
+  <img width="863" alt="image" src="https://github.com/DH10032/Teams/assets/155617166/7b859d7a-5345-4ada-b6a8-235f7b1e94e1">
  처리 순서는 (frondend - > backend) - > Map representation(맵 작성) </br>
  frondend를 먼저 끝낸 후 backend를 진행하면 어떨까 생각. (협의 후 결정 예정) </br>
  1) Data Acquistion, Visual odometry, Loop closure detection - > frondend </br>
   Data Acquisiton(데이터 획득): 카메라/라이다 같은 센서로부터 정보 획득(+ 데이터로부터 노이즈 제거 필요) </br>
   Visual odometry(시각적 주행 거리 측정): 데이터 특정 추출 -> 상대적 움직임 예측  </br>
   Loop closure detection(루프 폐쇄 검출): 방문한 위치인지 판단. </br>
- 2) Backend optimization(최적화) - > backend </br>
+2) Backend optimization(최적화) - > backend </br>
  
 </details>
 
