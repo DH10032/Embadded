@@ -28,7 +28,7 @@
       *특이 사항: 4월 말~5월 초에 대회 공지가 올라올 예정이므로 공지 체크할 것. </br>
     5월 2주차 ~ 5월 5주차 </br>
   --------------------------------------------------- </br>
-  <img width="863" alt="image" src="https://github.com/DH10032/Teams/assets/155617166/7b859d7a-5345-4ada-b6a8-235f7b1e94e1">
+  <img width="863" alt="image" src="https://github.com/DH10032/Teams/assets/155617166/7b859d7a-5345-4ada-b6a8-235f7b1e94e1"> </br>
  처리 순서는 (frondend - > backend) - > Map representation(맵 작성) </br>
  frondend를 먼저 끝낸 후 backend를 진행하면 어떨까 생각. (협의 후 결정 예정) </br>
  1) Data Acquistion, Visual odometry, Loop closure detection - > frondend </br>
