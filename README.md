@@ -54,8 +54,8 @@
  4. 최신 Slam </br>
   Deep slam(Slam + deep learning) </br>
  5. 추천 도서 </br>
-  Opencv로 배우는 컴퓨터 비전과 머신 러닝, Computer Vision(고양이 표지, 이론 중심),Computer vision Algorithm and Application(저자: Richard), An invitation to 3-D vision, Multiple View in geometry in computer vision </br>
-
+  Opencv로 배우는 컴퓨터 비전과 머신 러닝, Computer Vision(고양이 표지, 이론 중심),Computer vision Algorithm and Application(저자: Richard), An invitation to 3-D vision, Multiple View in geometry in        
+ computer vision </br>
 
  
 </details>
