@@ -38,6 +38,25 @@
  Loop closure detection (루프 폐쇄 검출): 방문한 위치인지 판단. </br>
 2) Backend optimization(최적화) - > backend </br>
 
+ 필요한 tool 및 도서
+ 1. 프로그래밍 언어
+  Python: Opencv 통해 C++ 보다 구현이 쉬움. But 쓰레드 관리, 최적화, HW 호환성 문제가 있음. 딥러닝 slam training 시에는 유용
+  C++: 빠르고 라이브러리가 많음. 
+  Ros: pcp ip 통신 보안상 문제로 현업에서는 안 씀. 그러나 쉬워서 학생들에게 추천.
+  Ros2: Ros 보안 문제 개선, 현재는 개발 중.
+ 2. 필요한 수학적 이론
+  a) 선형대수학+베이즈 확률론(slam 기초☆)
+  선형대수: 공간 이해
+  베이즈 확률론: 상태 추정+ sensor fusion(센서 데이터 병합(merging))
+  b) 최소자승법 문제+최적화(최신 slam)
+ 3. 관련 라이브러리 
+  Opencv, Eigen, Ceres, g2o, DBoW
+ 4. 최신 Slam
+  Deep slam(Slam + deep learning)
+ 5. 추천 도서
+  Opencv로 배우는 컴퓨터 비전과 머신 러닝, Computer Vision(고양이 표지, 이론 중심),Computer vision Algorithm and Application(저자: Richard), An invitation to 3-D vision, Multiple View in geometry in computer vision
+
+
  
 </details>
 
