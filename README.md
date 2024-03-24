@@ -126,8 +126,11 @@ computer vision </br>
 </details>
 <details>
   <summary>부품</summary>
-  1. 라즈베리 카메라 </br>
+  1. [라즈베리 카메라](https://www.eleparts.co.kr/goods/view?no=12391455) </br>
   2. 스텝모터 </br>
-  3. 
+  3. 스텝모터 드라이버 </br>
+  4. CM4108000 </br>
+  5. 라즈베리파이 PCIe 보드 </br>
+  6. 그래픽카드 GTX 1660또는 RTX 3080 </br>
   
 </details>
