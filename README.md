@@ -133,5 +133,6 @@ computer vision </br>
   4. [CM4108000](https://kr.element14.com/raspberry-pi/cm4108000/rpi-compute-module-4-lite-8gb/dp/3678911) </br>
   5. [라즈베리파이 PCIe 보드](https://ko.aliexpress.com/i/1005002923796998.html) </br>
   6. 그래픽카드 GTX 1660또는 RTX 3080 </br>
-  
+  7. LED
+  8. Power
 </details>
