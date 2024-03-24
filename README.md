@@ -166,4 +166,5 @@ computer vision </br>
   6. 그래픽카드 GTX 1660또는 RTX 3080 </br>
   7. [LED](https://ko.aliexpress.com/item/4001345875756.html?src=google&src=google&albch=shopping&acnt=631-313-3945&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbActive=false&isSmbAutoCall=false&needSmbHouyi=false&albcp=19147525093&albag=&trgt=&crea=ko4001345875756&netw=x&device=c&albpg=&albpd=ko4001345875756&gad_source=1&gclid=CjwKCAjwnv-vBhBdEiwABCYQA-u-DfJpXgLs9HSyVLZ8uIojXQ3idOM7LEBOCNHTwWhYt7SpxERmNhoCvQsQAvD_BwE&gclsrc=aw.ds&aff_fcid=cd87030e69f74b1699f437d86f379ecd-1711267387400-05968-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=cd87030e69f74b1699f437d86f379ecd-1711267387400-05968-UneMJZVf&terminal_id=5eb1f343c85d4a5c9f6c03f5e05d72de&afSmartRedirect=y)
   8. [Power](https://smartstore.naver.com/lycan/products/6164130514?NaPm=ct%3Dlu58sdog%7Cci%3D0JHl002CSdXzb61XsfiT%7Ctr%3Dpla%7Chk%3D380c5ece89619195ce541f196b2c16b3f32500d9)
-  9. 납땜기
+  9. [파워보드](https://smartstore.naver.com/makerspace/products/5329213449?)
+  10. 납땜기
