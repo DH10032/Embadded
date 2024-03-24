@@ -108,7 +108,7 @@ computer vision </br>
 
 <details>
   <summary>하드웨어</summary>
-https://www.youtube.com/@GDSB/playlists
+  https://www.youtube.com/@GDSB/playlists
     
   <details>
     <summary>회로 및 라즈베리</summary>
