@@ -117,26 +117,6 @@ computer vision </br>
 
 <details>
   <summary>하드웨어</summary>
-  3/24일부터 구매할 파워보드/카메라 조사 및 구매, 각 수치 측정 후</br>
-  3/25일부터 -> 모터드라이버 도착예정 -> 바로 회로연결(모터작동 시험) -> 후에 전체적인 배치 구상후  몸체설계 담당에게 정보 전달 </br>
-  3/26일부터 -> 몸체 제작 시작</br>
-  3/27 - 카메라 및 파워보드 연결 및 시험</br>
-  3/30~3/31 몸체 제작 밑 결합 -> 이론상 여기까지 기본형 제작</br>
-  4/1일까지</br>
-  
-  4/1부터</br>
-  - 윤석현: 기본형 점검 / 관리</br>
-  - 류정현: 라즈베리 구동 관련 코딩 </br>
-  4/11까지</br>
-  
-  시험기간</br>
-  5월초</br>
-  - 윤석현: 추가적인 제작? </br>
-  - 류정현: 추가적인 제작? </br>
-  5월 말 </br>
-  - 윤석현: 모든 제작품의 제작 완  </br>
-  - 류정현: 모든 제작품의 제작 완 </br>
-
   
   https://www.youtube.com/@GDSB/playlists
 </details>
@@ -184,6 +164,6 @@ computer vision </br>
   4. [CM4108000](https://kr.element14.com/raspberry-pi/cm4108000/rpi-compute-module-4-lite-8gb/dp/3678911) </br>
   5. [라즈베리파이 PCIe 보드](https://ko.aliexpress.com/i/1005002923796998.html) </br>
   6. 그래픽카드 GTX 1660또는 RTX 3080 </br>
-  7. LED
-  8. Power
+  7. [LED](https://ko.aliexpress.com/item/4001345875756.html?src=google&src=google&albch=shopping&acnt=631-313-3945&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbActive=false&isSmbAutoCall=false&needSmbHouyi=false&albcp=19147525093&albag=&trgt=&crea=ko4001345875756&netw=x&device=c&albpg=&albpd=ko4001345875756&gad_source=1&gclid=CjwKCAjwnv-vBhBdEiwABCYQA-u-DfJpXgLs9HSyVLZ8uIojXQ3idOM7LEBOCNHTwWhYt7SpxERmNhoCvQsQAvD_BwE&gclsrc=aw.ds&aff_fcid=cd87030e69f74b1699f437d86f379ecd-1711267387400-05968-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=cd87030e69f74b1699f437d86f379ecd-1711267387400-05968-UneMJZVf&terminal_id=5eb1f343c85d4a5c9f6c03f5e05d72de&afSmartRedirect=y)
+  8. [Power](https://smartstore.naver.com/lycan/products/6164130514?NaPm=ct%3Dlu58sdog%7Cci%3D0JHl002CSdXzb61XsfiT%7Ctr%3Dpla%7Chk%3D380c5ece89619195ce541f196b2c16b3f32500d9)
   9. 납땜기
