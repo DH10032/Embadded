@@ -135,4 +135,4 @@ computer vision </br>
   6. 그래픽카드 GTX 1660또는 RTX 3080 </br>
   7. LED
   8. Power
-  9. 납땜
+  9. 납땜기
