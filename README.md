@@ -108,37 +108,20 @@ computer vision </br>
 
   <details>
     <summary>하드웨어</summary>
-    
-    https://www.youtube.com/@GDSB/playlists
+  https://www.youtube.com/@GDSB/playlists
     
   <details>
-    <summary>회로 및 라즈베리</summary>
-    우분투 20.04로 설치 완
-    
-    모터는 dc모터+드라이버 (배달중) </br>
-    배터리는 9v짜리 건전지 </br>
-    카메라는 미정 </br>
+  <summary>회로 및 라즈베리</summary>
+  우분투 20.04로 설치 완
   
+  모터는 dc모터+드라이버 (배달중) </br>
+  배터리는 9v짜리 건전지 </br>
+  카메라는 미정 </br>
     
   </details>
 
 </details>
 
-<details>
-  <summary>SLAM</summary>
-  
-  1. [SLAM 방식](https://hjdevelop.tistory.com/15/)
-     
-  SLAM 방식
-    <details>
-      <summary>프런트 엔드</summary>
-    </details>
-  
-  <details>
-      <summary>백 엔드</summary>
-    </details>
-  
-</details>
 
 ## 문제점
 <details>
