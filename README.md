@@ -128,7 +128,7 @@ computer vision </br>
   <summary>부품</summary>
   
   1. [라즈베리 카메라](https://www.eleparts.co.kr/goods/view?no=12391455) </br>
-  2. 스텝모터 </br>
+  2. [스텝모터](https://parts-parts.co.kr/product/pp-a710-nema17-3d-%ED%94%84%EB%A6%B0%ED%84%B0%EB%AA%A8%ED%84%B0-17hs4023-%EC%8A%A4%ED%85%9D%ED%95%91%EB%AA%A8%ED%84%B0/1143/category/155/display/1/) </br>
   3. 스텝모터 드라이버 </br>
   4. CM4108000 </br>
   5. 라즈베리파이 PCIe 보드 </br>
