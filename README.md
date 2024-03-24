@@ -120,7 +120,7 @@ computer vision </br>
 
 ## 문제점
 <details>
-  1. DC모터 회전수 측정 </br>
+  1. DC모터 회전수 측정(DC모터 대신 스텝모터로 변경) </br>
   2. 
   
 </details>
@@ -135,3 +135,4 @@ computer vision </br>
   6. 그래픽카드 GTX 1660또는 RTX 3080 </br>
   7. LED
   8. Power
+  9. 납땜
