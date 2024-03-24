@@ -126,7 +126,8 @@ computer vision </br>
 </details>
 <details>
   <summary>부품</summary>
-  1. [라즈베리 카메라](https://www.eleparts.co.kr/goods/view?no=12391455) </br>
+  
+  1. [라즈베리 카메라] (https://www.eleparts.co.kr/goods/view?no=12391455) </br>
   2. 스텝모터 </br>
   3. 스텝모터 드라이버 </br>
   4. CM4108000 </br>
