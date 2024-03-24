@@ -106,12 +106,12 @@ computer vision </br>
  
 </details>
 
-  <details>
-    <summary>하드웨어</summary>
-  https://www.youtube.com/@GDSB/playlists
+<details>
+  <summary>하드웨어</summary>
+https://www.youtube.com/@GDSB/playlists
     
   <details>
-  <summary>회로 및 라즈베리</summary>
+    <summary>회로 및 라즈베리</summary>
   우분투 20.04로 설치 완
   
   모터는 dc모터+드라이버 (배달중) </br>
