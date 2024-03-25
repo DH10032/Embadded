@@ -133,7 +133,7 @@ computer vision </br>
 ## 부품
   
   1. [라즈베리 카메라](https://www.eleparts.co.kr/goods/view?no=12391455) </br>
-  2. [스텝모터 드라이버]([https://parts-parts.co.kr/product/pp-a710-nema17-3d-%ED%94%84%EB%A6%B0%ED%84%B0%EB%AA%A8%ED%84%B0-17hs4023-%EC%8A%A4%ED%85%9D%ED%95%91%EB%AA%A8%ED%84%B0/1143/category/155/display/1/](https://mechasolution.com/shop/goods/goods_view.php?goodsno=8601&rid=88978337-fe85-4101-8bb1-f64a7b984c24)) </br>
+  2. [스텝모터 드라이버](https://mechasolution.com/shop/goods/goods_view.php?goodsno=8601&rid=88978337-fe85-4101-8bb1-f64a7b984c24) </br>
   3. [스텝모터](https://parts-parts.co.kr/product/pp-a710-nema17-3d-%ED%94%84%EB%A6%B0%ED%84%B0%EB%AA%A8%ED%84%B0-17hs4023-%EC%8A%A4%ED%85%9D%ED%95%91%EB%AA%A8%ED%84%B0/1143/category/155/display/1/) </br>
   4. [CM4108000](https://kr.element14.com/raspberry-pi/cm4108000/rpi-compute-module-4-lite-8gb/dp/3678911) </br>
   5. [라즈베리파이 PCIe 보드](https://ko.aliexpress.com/i/1005002923796998.html) </br>
