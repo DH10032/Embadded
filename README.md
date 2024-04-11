@@ -25,3 +25,9 @@
   1. jetson orin nano developer-kit </br>
   2. 카메라 </br>
 </details>
+
+<details>
+  <summary>목표</summary>
+  1. 머신러닝 기초 떼기
+  2. 딥러닝 이론및 실습(CNN위주)
+</details>
