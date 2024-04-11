@@ -25,7 +25,3 @@
   1. jetson orin nano developer-kit </br>
   2. 카메라 </br>
 </details>
-
-1. 훼손된 책 구분하기 위한 AI 생각하기
-2. 딥러닝이 가능한 싱글보드 컴퓨터
-3. 
