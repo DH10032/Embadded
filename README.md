@@ -21,7 +21,7 @@
 <details>
   <summary>구매목록</summary>
   1. jetson orin nano developer-kit </br>
-  2.  </br>
+  2. 카메라 </br>
 </details>
 
 ## 정보
