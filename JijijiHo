@@ -1,0 +1,29 @@
+# import torch.functional as T
+import torch
+import torchvision.datasets as datasets
+import torchvision.transforms as transforms
+
+from fastai.vision.all import * 
+
+
+path = untar_data(URLs.MNIST_SAMPLE) 
+
+# print((path/'train').ls())
+
+threes = (path/'train'/'3').ls().sorted()
+sevens = (path/'train'/'7').ls().sorted()
+# print(threes)
+
+im3_path = threes[1]
+im3 = Image.open(im3_path)
+print(type(im3))
+
+print(tensor(im3)[4:10,4:10])
+
+im3_t = tensor(im3)
+df = pd.DataFrame(im3_t[4:15,4:22])
+df.style.set_properties(**{'font-size':'6pt'}).background_gradient('Greys')
+
+seven_tensors = [tensor(Image.open(o) for o in sevens)]
+three_tensors = [tensor(Image.open(o) for o in threes)]
+print(len(three_tensors), len(seven_tensors))
