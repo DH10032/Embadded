@@ -5,6 +5,8 @@ import torchvision.transforms as transforms
 
 from fastai.vision.all import * 
 
+import PIL
+
 
 path = untar_data(URLs.MNIST_SAMPLE) 
 
@@ -16,14 +18,24 @@ sevens = (path/'train'/'7').ls().sorted()
 
 im3_path = threes[1]
 im3 = Image.open(im3_path)
-print(type(im3))
+# print(type(im3))
 
-print(tensor(im3)[4:10,4:10])
+tensor(im3)[4:10,4:10]
 
 im3_t = tensor(im3)
 df = pd.DataFrame(im3_t[4:15,4:22])
 df.style.set_properties(**{'font-size':'6pt'}).background_gradient('Greys')
 
-seven_tensors = [tensor(Image.open(o) for o in sevens)]
-three_tensors = [tensor(Image.open(o) for o in threes)]
+seven_tensors = [tensor(Image.open(o)) for o in sevens]
+three_tensors = [tensor(Image.open(o)) for o in threes]
 print(len(three_tensors), len(seven_tensors))
+
+stacked_sevens = torch.stack(seven_tensors).float()/255
+stacked_threes = torch.stack(three_tensors).float()/255
+print(stacked_threes.shape)
+
+# len(stacked_threes.shape)
+# print(stacked_threes.ndim)
+
+mean3 = stacked_threes.mean(0)
+show_image(mean3)
