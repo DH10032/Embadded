@@ -3,6 +3,8 @@ from TorchVision Object Detection Finetuning Tutorial
 linK: https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html
 made on 2024/07/10
 pre-trained Mask R-CNN model on the Penn-Fudan Database for Pedestrian Detection and Segmentation. 
+
+created by Jiho Kim, University of Seoul, Mechanical and Infomational Engineering, 2022430012
 '''
 
 
