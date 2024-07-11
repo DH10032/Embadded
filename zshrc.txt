@@ -1,1 +1,6 @@
-https://geunuk.tistory.com/45
+# 고정 이모지
+prompt_context() {
+  # Custom (Fix Emoji)
+  prompt_segment black default "dh"
+}
+export PATH=/opt/homebrew/bin:$PATH
