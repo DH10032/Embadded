@@ -176,3 +176,28 @@ with torch.no_grad():
         correct += (predicted == labels).sum().item()
         
     print(f'Accuracy of the model: {100 * correct / total:.2f}%')
+
+'''
+cuda
+Epoch [1/20], Train Loss: 0.6972, Val Loss: 0.6587
+Epoch [2/20], Train Loss: 0.4026, Val Loss: 0.4225
+Epoch [3/20], Train Loss: 0.2215, Val Loss: 0.6947
+Epoch [4/20], Train Loss: 0.0265, Val Loss: 2.5429
+Epoch [5/20], Train Loss: 0.0451, Val Loss: 1.1142
+Epoch [6/20], Train Loss: 0.0082, Val Loss: 0.2493
+Epoch [7/20], Train Loss: 0.0061, Val Loss: 0.8629
+Epoch [8/20], Train Loss: 0.0011, Val Loss: 1.0406
+Epoch [9/20], Train Loss: 0.0006, Val Loss: 1.5070
+Epoch [10/20], Train Loss: 0.0005, Val Loss: 0.8231
+Epoch [11/20], Train Loss: 0.0004, Val Loss: 1.4188
+Epoch [12/20], Train Loss: 0.0003, Val Loss: 1.1007
+Epoch [13/20], Train Loss: 0.0002, Val Loss: 0.8750
+Epoch [14/20], Train Loss: 0.0002, Val Loss: 1.3739
+Epoch [15/20], Train Loss: 0.0001, Val Loss: 1.1386
+Epoch [16/20], Train Loss: 0.0007, Val Loss: 3.0152
+Epoch [17/20], Train Loss: 0.0169, Val Loss: 3.1576
+Epoch [18/20], Train Loss: 0.0015, Val Loss: 0.5036
+Epoch [19/20], Train Loss: 0.0002, Val Loss: 0.8847
+Epoch [20/20], Train Loss: 0.0002, Val Loss: 0.9975
+Accuracy of the model: 84.50%
+'''
