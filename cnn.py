@@ -197,7 +197,7 @@ class CNN(nn.Module):       # nn.module class 상속
             nn.Linear(100, 10),
             nn.ReLU(),
 
-            nn.Linear(10, 2),
+            nn.Linear(10, 2)
             
         )
         
@@ -205,7 +205,7 @@ class CNN(nn.Module):       # nn.module class 상속
     	# self.layer에 정의한 연산 수행
         out = self.layer(x)
         out = out.unsqueeze(0)
-        out = out.view(1, -1)
+        out = out.view(1, -1)     # torch.tensor.view(): 메모리 복사 없이, 같은 텐서를 다른 모양으로 보여줌(예를 들어, stride를 다르게 한다던가)). -1로 하면 자동 지정. 즉, 1행만 보여 줌.
         # self.fc_layer 정의한 연산 수행    
         out = self.fc_layer(out)
         return out
@@ -219,23 +219,23 @@ Img_Test_List = DL(path).T()
 # 위에 클래스에서 정의한 모델을 가져옴
 # 모델 초기화
 model = CNN()
-model = model.to(DEVICE)                # 모델을 Device로 이동
+model = model.to(DEVICE)                # 모델을 Device로 이동. torch.nn.Module.to() (https://pytorch.org/docs/stable/generated/torch.nn.Module.html#torch.nn.Module.to) DEVICE는 일반적으로 cuda 또는 cpu임.
 
 print(model)
 
 loss_func = nn.CrossEntropyLoss()       # 손실함수를 CrossEntropyLoss를 사용함 (좋은지는 모르겠음)
-optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)  # baxkword를 하면 파라미터 값을 조정하는 함수
+optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)  # backword를 하면 파라미터 값을 조정하는 함수
 
 for i in range(num_epoch):
     for data in Img_Train_List:
-        x = data[1].to(DEVICE)      # tensor를 x에 저장
+        x = data[1].to(DEVICE)      # tensor를 x에 저장. torch.tensor.to() (https://pytorch.org/docs/stable/generated/torch.Tensor.to.html#torch.Tensor.to) DEVICE는 일반적으로 cuda 또는 cpu임.
         y= data[0].to(DEVICE)
 
-        optimizer.zero_grad()
+        optimizer.zero_grad()       # grad 값을 0으로 초기화 후 역전파 -> grad값이 다음 epopc에 영향 미치는 것 방지
         
-        output = model.forward(x)
+        output = model.forward(x)   # 하위 클래스의 메소드인 forward. 특징 추출(컨볼루션(+패딩), 활성화 함수 처리, 풀링)
         print(output)
-        loss = loss_func(output[0],y)
+        loss = loss_func(output[0],y)  # nn.CrossEntropyLoss에 인자 대입. 
         loss.backward()
         optimizer.step()
 
@@ -248,13 +248,17 @@ model.eval()
 with torch.no_grad():
     total = 0
     for data in Img_Test_List:
-        New_x = data[1].to(DEVICE)      # tensor를 x에 저장
-        New_y= data[0].to(DEVICE)
+        New_x = data[1].to(DEVICE)      # tensor를 x에 저장. torch.tensor.to() (https://pytorch.org/docs/stable/generated/torch.Tensor.to.html#torch.Tensor.to)
+        New_y= data[0].to(DEVICE)       
 
-        output = model.forward(New_x)
+        output = model.forward(New_x)   # 하위 클래스의 메소드인 forward. 특징 추출(컨볼루션(+패딩), 활성화 함수 처리, 풀링)
 
-        # torch.max함수는 (최댓값,index)를 반환 
-        output_index = torch.max(output, dim=1)[1]        
+        # torch.max함수는 (최댓값,index)를 반환 -> dim = 1이면 행(가로) 중 최대, dim = 2이면 열(세로) 중 최대, dim = 3이면 높이 중 최대값을 모아 텐서로 반환.(+ 각 최대값의 인덱스)
+        output_index = torch.max(output, dim=1)[1]    
+        ''' ex) tensor([[-1.2360, -0.2942, -0.1222,  0.8475],
+                [ 1.1949, -1.1127, -2.2379, -0.6702],
+                [ 1.5717, -0.9207,  0.1297, -1.8768],
+                [-0.6172,  1.0036, -0.6060, -0.2432]]) -> torch.return_types.max(values=tensor([0.8475, 1.1949, 1.5717, 1.0036]), indices=tensor([3, 0, 0, 1])) '''                                                      
 
         # 전체 개수 += 라벨의 개수
         total += 1.0
