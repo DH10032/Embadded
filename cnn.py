@@ -3,14 +3,14 @@
 '''
 
 
-import torch                                        # 기본 import (그냥 뭔가 불안해서 부름)
+import torch                                        # 기본 import(텐서와 텐서 계산 라이브러리)(그냥 뭔가 불안해서 부름)
 from torch.utils.data import Dataset, DataLoader    # DataLoader 함수를 위한 import
 import matplotlib.pyplot as plt                     # show()를 위한 import
 import numpy as np                                  # 행렬 라이브러리 아직 크게 필요없음 (지워도 됨)
-import os                                           # 잘은 모름 바로 아래 코드를 위해 부름 (maybe?)서
+import os                                           # 운영 체제와 상호작용하는 라이브러리. 바로 아래 코드를 위해 부름 (maybe?)서
 from PIL import Image                               # Image.open()을 위해 부름
-import torch.nn as nn                               # 모든 신경망들의 Base class이다. (굉장히 중요)
-import torch.optim as optim                         # 최적화 알고리즘들이 포함됨
+import torch.nn as nn                               # 모든 신경망들의 Base class이다. (굉장히 중요) (손실함수, 컨볼루션 층, 풀링 층, 활성화 함수 등을 위 사용)
+import torch.optim as optim                         # 최적화 알고리즘들이 포함됨(gradient를 통해 정답에 가까이 가게 됨. 이용하는 기법을 선택할 수 있는데, SGD, Moment, adams 등이 있음: https://amber-chaeeunk.tistory.com/23)
 import torch.nn.init as init                        # 텐서에 초기값을 줌
 import torchvision.datasets as datasets             # 이미지 데이터셋 집합체
 import torchvision.transforms as transforms         # 이미지 변환 툴
@@ -21,8 +21,7 @@ from pathlib import Path
 import random
 
 '''
-순전파 : 입력값 X부터 순차적으 레이어가 진행
-
+순전파 : 입력값 X부터 순차적으로 레이어가 진행
 역전파 : 출력층부터 역으로 레이어가 진행
 
 1.
@@ -58,7 +57,7 @@ idea
 1. 배경을 최대한 정리한다.
 2. 후보 바운더리를 만든다.
 3. 후보들을 분리한다.
-    프리트된 글자 객체, 낙서 객체, 배경 객체
+    프린트된 글자 객체, 낙서 객체, 배경 객체
 
 
 목표 : 손글씨와 프린트 글씨를 구분하게 만들기
@@ -70,10 +69,10 @@ path = Path('/home/ldh/Desktop')  # (주의!!) 컴퓨터에서 손글씨 폴더�
 
 # Num_Img = 100            # 일괄적으로 처리하는 데이터 양 (이거는 지금 당장 사용 못함)
 learning_rate = 0.002      # backword 과정에서 SGD를 할 때 중요하게 쓰임
-num_epoch = 10              # 전체 데이터셋을 학습 하는 횟수
-new_width = 200             # 이미지 사이즈 통일 아래 cnn 계산할 때를 위함
+num_epoch = 10             # 전체 데이터셋을 학습 하는 횟수
+new_width = 200            # 이미지 사이즈 통일 아래 cnn 계산할 때를 위함
 new_height = 200
-Num_Img = 3000               # 랜덤으로 가져오는 이미지 개수
+Num_Img = 3000             # 랜덤으로 가져오는 이미지 개수
 
 # ===========================================================================
 # 만약 현재 장치가 GPU를 지원하지 못한다면, CPU를 Device로 지정
@@ -143,12 +142,12 @@ class CNN(nn.Module):       # nn.module class 상속
         self.layer = nn.Sequential(                                     # 각 모듈을 순차적으로 실행한다.
             
             # [3, 150, 150]
-            nn.Conv2d(in_channels=3,out_channels=16,kernel_size=3),     # convolution 연산 (정말 놀랍게도 이미지 Tensor의 shape를 보니 RGB 이미지네요. 따라서 in_channels이 3입니다.)
-            nn.ReLU(),
+            nn.Conv2d(in_channels=3,out_channels=16,kernel_size=3),     # convolution 연산 (정말 놀랍게도 이미지 Tensor의 shape를 보니 RGB 이미지네요. 따라서 in_channels이 3입니다.)(상세 설명: https://blog.joonas.io/196)
+            nn.ReLU(),                                                  # convoultion 연산과 활성화 함수 처리 사이에 padding이 필요하다면 nn.Conv2d(in_channels=3,out_channels=16,kernel_size=3,padding=1)
             nn.Conv2d(in_channels=16,out_channels=16,kernel_size=3),
             nn.ReLU(),
 
-            nn.MaxPool2d(kernel_size=2,stride=2),                       # 원래 vgg16은 3x3 커널이지만, 3x3으로 하기에 이미지가 너무 작아서 2x2로 진행
+            nn.MaxPool2d(kernel_size=2,stride=2),                       # 원래 vgg16은 3x3 커널이지만, 3x3으로 하기에 이미지가 너무 작아서 2x2로 진행->패딩을 사용하면 3x3 가능하려나?
 
             nn.Conv2d(in_channels=16,out_channels=32,kernel_size=3),
             nn.ReLU(),
