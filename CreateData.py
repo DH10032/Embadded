@@ -2,7 +2,7 @@
 데이터 생성 코드
 
 
-output 형식      [(label,이미지 tensor), ...]
+output 형식      label list
 
 코드 실행전 주의
 사진 경로 설정하시고
