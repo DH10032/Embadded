@@ -2,6 +2,8 @@ import supervision as sv
 import cv2
 import numpy as np
 
+# ========================================================= # load
+
 # 이미지 파일 경로
 image_path = "/home/taeyun/labelImg/image/image1.jpg"
 
@@ -30,6 +32,8 @@ with open(txt_file, 'r') as f:
     x1 = int((x + w / 2) * image.shape[1])  # 바운딩 박스 우하단 x 좌표
     y1 = int((y + h / 2) * image.shape[0])  # 바운딩 박스 우하단 y 좌표
 
+# ========================================================= # 박스 관련 정보 생성
+
 # 감지 결과 생성
 detections = sv.Detections(
   xyxy=np.array([[x0, y0, x1, y1]]),
@@ -45,6 +49,8 @@ annotated_frame = bounding_box_annotator.annotate(
     scene=image.copy(),
     detections=detections
 )
+
+# ========================================================= # 출력
 
 # 이미지 출력
 sv.plot_image(annotated_frame)
