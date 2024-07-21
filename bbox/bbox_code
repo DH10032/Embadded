@@ -2,32 +2,32 @@
 
 # ========================================================= # import
 
-import supervision as sv
-import cv2
-import numpy as np
+import supervision as sv  
+import cv2                
+import numpy as np       
 
 # ========================================================= # dataload 및 텍스트 파일에 저장된 class, x, y, w, h 불러오기
 
 # 이미지 파일 경로
-image_path = "/home/taeyun/labelImg/image/image1.jpg"
+image_path = "/home/taeyun/labelImg/image/image1.jpg"  # 처리할 이미지 파일 경로
 
 # 이미지 파일 읽기
-image = cv2.imread(image_path)
+image = cv2.imread(image_path)  # OpenCV를 사용하여 이미지 읽기
 
 # txt 파일 경로
-txt_file = "/home/taeyun/labelImg/image/image1.txt"
+txt_file = "/home/taeyun/labelImg/image/image1.txt"  # 바운딩 박스 정보가 저장된 텍스트 파일 경로
 
 # txt 파일에서 바운딩 박스 정보 읽어오기
 with open(txt_file, 'r') as f:
-    line = f.readline().strip()
-    values = line.split()
+    line = f.readline().strip()  # 텍스트 파일에서 첫 번째 줄 읽기
+    values = line.split()       # 공백을 기준으로 값 분리
     
     # 클래스 번호, x, y, w, h 추출
     class_id = int(values[0])  # 클래스 번호 (0: inside, 1: outside)
-    x = float(values[1])       # x 좌표
-    y = float(values[2])       # y 좌표
-    w = float(values[3])       # 높이
-    h = float(values[4])       # 너비
+    x = float(values[1])       # x 좌표 (비율)
+    y = float(values[2])       # y 좌표 (비율)
+    w = float(values[3])       # 너비 (비율)
+    h = float(values[4])       # 높이 (비율)
 
     # 바운딩 박스 좌표 계산
     # x0, y0, x1, y1 순서로 계산
@@ -40,21 +40,21 @@ with open(txt_file, 'r') as f:
 
 # 감지 결과 생성
 detections = sv.Detections(
-  xyxy=np.array([[x0, y0, x1, y1]]),
-  class_id=np.array([class_id]),
-  confidence=np.array([0.94])
+  xyxy=np.array([[x0, y0, x1, y1]]),  # 바운딩 박스 좌표 (x0, y0, x1, y1)
+  class_id=np.array([class_id]),       # 클래스 ID
+  confidence=np.array([0.94])          # 감지 신뢰도 (여기서는 0.94로 설정)
 )
 
 # 바운딩 박스 annotator 생성
-bounding_box_annotator = sv.BoundingBoxAnnotator()
+bounding_box_annotator = sv.BoundingBoxAnnotator()  # 바운딩 박스 주석을 추가하는 annotator 객체 생성
 
 # 바운딩 박스 추가된 이미지 생성
 annotated_frame = bounding_box_annotator.annotate(
-    scene=image.copy(),
-    detections=detections
+    scene=image.copy(),  # 원본 이미지를 복사하여 주석 추가
+    detections=detections  # 바운딩 박스와 클래스 정보를 포함한 감지 결과
 )
 
 # ========================================================= # 출력
 
 # 이미지 출력
-sv.plot_image(annotated_frame)
+sv.plot_image(annotated_frame)  # Supervision 라이브러리를 사용하여 이미지 출력
