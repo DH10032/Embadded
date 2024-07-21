@@ -1,8 +1,12 @@
+# pip install supervision
+
+# ========================================================= # import
+
 import supervision as sv
 import cv2
 import numpy as np
 
-# ========================================================= # load
+# ========================================================= # dataload 및 텍스트 파일에 저장된 class, x, y, w, h 불러오기
 
 # 이미지 파일 경로
 image_path = "/home/taeyun/labelImg/image/image1.jpg"
