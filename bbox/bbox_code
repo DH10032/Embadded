@@ -46,7 +46,7 @@ detections = sv.Detections(
 )
 
 # 바운딩 박스 annotator 생성
-bounding_box_annotator = sv.BoundingBoxAnnotator()  # 바운딩 박스 주석을 추가하는 annotator 객체 생성
+bounding_box_annotator = sv.BoundingBoxAnnotator()  # 바운딩 박스 주석을 추가하는 annotator 객체 생성(annotator는 바운딩 박스를 이미지에 추가하는 역할을 하는 주석 추가기)
 
 # 바운딩 박스 추가된 이미지 생성
 annotated_frame = bounding_box_annotator.annotate(
