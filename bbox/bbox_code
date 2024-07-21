@@ -1,0 +1,50 @@
+import supervision as sv
+import cv2
+import numpy as np
+
+# 이미지 파일 경로
+image_path = "/home/taeyun/labelImg/image/image1.jpg"
+
+# 이미지 파일 읽기
+image = cv2.imread(image_path)
+
+# txt 파일 경로
+txt_file = "/home/taeyun/labelImg/image/image1.txt"
+
+# txt 파일에서 바운딩 박스 정보 읽어오기
+with open(txt_file, 'r') as f:
+    line = f.readline().strip()
+    values = line.split()
+    
+    # 클래스 번호, x, y, w, h 추출
+    class_id = int(values[0])  # 클래스 번호 (0: inside, 1: outside)
+    x = float(values[1])       # x 좌표
+    y = float(values[2])       # y 좌표
+    w = float(values[3])       # 높이
+    h = float(values[4])       # 너비
+
+    # 바운딩 박스 좌표 계산
+    # x0, y0, x1, y1 순서로 계산
+    x0 = int((x - w / 2) * image.shape[1])  # 바운딩 박스 좌상단 x 좌표
+    y0 = int((y - h / 2) * image.shape[0])  # 바운딩 박스 좌상단 y 좌표
+    x1 = int((x + w / 2) * image.shape[1])  # 바운딩 박스 우하단 x 좌표
+    y1 = int((y + h / 2) * image.shape[0])  # 바운딩 박스 우하단 y 좌표
+
+# 감지 결과 생성
+detections = sv.Detections(
+  xyxy=np.array([[x0, y0, x1, y1]]),
+  class_id=np.array([class_id]),
+  confidence=np.array([0.94])
+)
+
+# 바운딩 박스 annotator 생성
+bounding_box_annotator = sv.BoundingBoxAnnotator()
+
+# 바운딩 박스 추가된 이미지 생성
+annotated_frame = bounding_box_annotator.annotate(
+    scene=image.copy(),
+    detections=detections
+)
+
+# 이미지 출력
+sv.plot_image(annotated_frame)
