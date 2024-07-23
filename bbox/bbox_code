@@ -1,55 +1,66 @@
-# 코드 실행 전 'pip install supervision' 필요
-
 # ========================================================= # import
 
 import supervision as sv  
 import cv2                
 import numpy as np       
+import json
 
-# ========================================================= # dataload 및 텍스트 파일에 저장된 class, x, y, w, h 불러오기
+# ========================================================= # dataload 및 json 파일에 저장된 class, x, y, w, h 불러오기
 
 # 이미지 파일 경로
-image_path = "/home/taeyun/labelImg/image/image1.jpg"  # 처리할 이미지 파일 경로
+image_path = "/home/taeyun/labelImg/image/bball.jpg"  # 처리할 이미지 파일 경로
 
 # 이미지 파일 읽기
 image = cv2.imread(image_path)  # OpenCV를 사용하여 이미지 읽기
 
-# txt 파일 경로
-txt_file = "/home/taeyun/labelImg/image/image1.txt"  # 바운딩 박스 정보가 저장된 텍스트 파일 경로
+# json 파일 경로
+json_file = "/home/taeyun/labelImg/image/bball.json"  # 바운딩 박스 정보가 저장된 JSON 파일 경로
 
-# txt 파일에서 바운딩 박스 정보 읽어오기
-with open(txt_file, 'r') as f:
-    line = f.readline().strip()  # 텍스트 파일에서 첫 번째 줄 읽기
-    values = line.split()       # 공백을 기준으로 값 분리
-    
-    # 클래스 번호, x, y, w, h 추출
-    class_id = int(values[0])  # 클래스 번호 (0: inside, 1: outside)
-    x = float(values[1])       # x 좌표 (비율)
-    y = float(values[2])       # y 좌표 (비율)
-    w = float(values[3])       # 너비 (비율)
-    h = float(values[4])       # 높이 (비율)
+# json 파일에서 바운딩 박스 정보 읽어오기
+with open(json_file, 'r') as f:
+    data = json.load(f)  # JSON 파일 읽기
 
-    # 바운딩 박스 좌표 계산
-    # x0, y0, x1, y1 순서로 계산
-    x0 = int((x - w / 2) * image.shape[1])  # 바운딩 박스 좌상단 x 좌표
-    y0 = int((y - h / 2) * image.shape[0])  # 바운딩 박스 좌상단 y 좌표
-    x1 = int((x + w / 2) * image.shape[1])  # 바운딩 박스 우하단 x 좌표
-    y1 = int((y + h / 2) * image.shape[0])  # 바운딩 박스 우하단 y 좌표
+# 바운딩 박스 정보 추출 및 좌표 계산
+annotations = data[0]['annotations']
+num_boxes = len(annotations)
+
+# 클래스 라벨 추출 및 클래스 ID 생성
+labels = np.array([annotation['label'] for annotation in annotations])
+class_ids = np.where(labels == 'person', 0, 1)  # 'person' 클래스는 0으로 설정
+
+# 좌표 정보 추출 및 numpy 배열로 변환
+coordinates = np.array([[annotation['coordinates']['x'], annotation['coordinates']['y'], annotation['coordinates']['width'], annotation['coordinates']['height']] for annotation in annotations])
+
+# 좌표 계산
+x_centers = coordinates[:, 0] # 모든 행, 0열
+y_centers = coordinates[:, 1]
+widths = coordinates[:, 2]
+heights = coordinates[:, 3]
+
+# 바운딩 박스 좌표 계산 (벡터화 연산)
+x0 = (x_centers - widths / 2).astype(int)
+y0 = (y_centers - heights / 2).astype(int)
+x1 = (x_centers + widths / 2).astype(int)
+y1 = (y_centers + heights / 2).astype(int)
+
+# 바운딩 박스 좌표와 클래스 ID를 결합하여 detections 리스트 생성
+xyxy = np.stack([x0, y0, x1, y1], axis=1).astype(int)
+confidences = np.full(num_boxes, 0.94) # 감지 신뢰도는 모두 0.94로 설정
 
 # ========================================================= # 박스 관련 정보 생성
 
 # 감지 결과 생성
 detections = sv.Detections(
-  xyxy=np.array([[x0, y0, x1, y1]]),  # 바운딩 박스 좌표 (x0, y0, x1, y1)
-  class_id=np.array([class_id]),       # 클래스 ID
-  confidence=np.array([0.94])          # 감지 신뢰도 (여기서는 0.94로 설정)
+    xyxy=xyxy,  # 바운딩 박스 좌표 (x0, y0, x1, y1)
+    class_id=class_ids,  # 클래스 ID
+    confidence=confidences  # 감지 신뢰도
 )
 
 # 바운딩 박스 annotator 생성
-bounding_box_annotator = sv.BoundingBoxAnnotator()  # 바운딩 박스 주석을 추가하는 annotator 객체 생성(annotator는 바운딩 박스를 이미지에 추가하는 역할을 하는 주석 추가기)
+box_annotator = sv.BoxAnnotator()  # 바운딩 박스 주석을 추가하는 annotator 객체 생성
 
 # 바운딩 박스 추가된 이미지 생성
-annotated_frame = bounding_box_annotator.annotate(
+annotated_frame = box_annotator.annotate(
     scene=image.copy(),  # 원본 이미지를 복사하여 주석 추가
     detections=detections  # 바운딩 박스와 클래스 정보를 포함한 감지 결과
 )
